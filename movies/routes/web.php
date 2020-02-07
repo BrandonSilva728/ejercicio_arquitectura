@@ -11,11 +11,11 @@
 |
 */
 
-/*
+
 Route::get('/', function () {
     return view('welcome');
 });
-*/
 
 
-Route::get('/', 'MoviesController@Handle');
+
+Route::get('/getMovies', 'MoviesController@Handle');

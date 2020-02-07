@@ -1,9 +1,9 @@
 <?php
 namespace App\Http\Repositories\Contracts;
 
-Use App\Movie;
+use Illuminate\Database\Eloquent\Collection;
 
 interface MoviesRepositoryInterface
 {
-    public function getMovies(): Movie;
+    public function getMovies(): Collection;
 }

@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Http\Repositories\Contracts\MoviesRepositoryInterface;
+use App\Http\Repositories\EloquentMoviesRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,8 +16,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            MovieRepositoryInterface::class,
-            EloquentMovieRepository::class
+            MoviesRepositoryInterface::class,
+            EloquentMoviesRepository::class
         );
     }
 
