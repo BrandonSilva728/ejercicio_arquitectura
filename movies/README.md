@@ -1,9 +1,9 @@
 ## TALLER ARQUITECTURA
 
 # Integrantes
-Jorge Brandon Silva Herrera
-Alex Correa Sanguino
-Alvaro Martinez
+- Jorge Brandon Silva Herrera
+- Alex Correa Sanguino
+- Alvaro Martinez
 
 
 # Decisiones de aquitectura
