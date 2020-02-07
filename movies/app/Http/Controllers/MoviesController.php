@@ -23,6 +23,6 @@ class MoviesController extends Controller
     public function Handle()
     {
         $movies = $this->moviesUseCase->__invoke();
-        return view('welcome')->with($movies);
+        return view('welcome')->with('movies', $movies);
     }
 }

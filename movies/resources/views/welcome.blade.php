@@ -71,8 +71,27 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <table align="center">
+                    <thead>
+                        <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                
+                        @foreach ($movies as $movie)
+                            <tr>
+                                <td>
+                                    Title: <b>{{$movie['title']}}</b><br>
+                                    Ranking: <b>{{$movie['vote_average']}}</b><br>
+                                    Overview: <p>{{$movie['overview']}}</p>
+
+                                </td>
+                                <td><img src="resources/images{{$movie['poster_path']}}" alt="{{$movie['title']}}"></td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+
+                </table>
             </div>
         </div>
     </body>
